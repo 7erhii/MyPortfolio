@@ -1,0 +1,21 @@
+.about {
+  &__container {
+    // padding: em(60);
+    // background: #a2a2a2;
+  }
+  &__text {
+    padding: em(20) em(60);
+    // padding-top: em(20);
+    background: rgb(168, 168, 168);
+    border-radius: 16px;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__skills ul {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}

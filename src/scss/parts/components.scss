@@ -1,0 +1,31 @@
+.btn {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: em(8) em(24);
+    border-radius: 50px;
+  }
+.btn svg{
+    max-width: em(30);
+    max-height: em(30);
+  }
+  
+.btn svg path{
+    fill: #fff;
+  }
+  .social-btn {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    // background: #fff;
+    // padding-left: 10px;
+    border-radius: 50px;
+//    max-width: em(40);
+
+
+  }  
+  .social-btn svg {
+   max-width: em(40);
+   max-height: em(40);
+  }  
+  
