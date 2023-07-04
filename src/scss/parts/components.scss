@@ -1,31 +1,50 @@
 .btn {
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    padding: em(8) em(24);
-    border-radius: 50px;
-  }
-.btn svg{
-    max-width: em(30);
-    max-height: em(30);
-  }
-  
-.btn svg path{
-    fill: #fff;
-  }
-  .social-btn {
-    display: flex;
-    gap: 4px;
-    align-items: center;
-    // background: #fff;
-    // padding-left: 10px;
-    border-radius: 50px;
-//    max-width: em(40);
+  display: flex;
+  align-items: center;
+  padding: em(8) em(24);
+  border-radius: 50px;
+}
+.btn svg {
+  width: em(30);
+  height: em(30);
+}
 
+.btn svg path {
+  fill: #ffffff;
+}
+.social-btn {
+  display: flex;
+  gap: em(4);
+  align-items: center;
+  border-radius: 50px;
+}
 
-  }  
-  .social-btn svg {
-   max-width: em(40);
-   max-height: em(40);
-  }  
-  
+.social-btn svg {
+  max-width: em(40);
+  max-height: em(40);
+}
+
+// .social-btn:hover {
+//   animation: colorAnimation 4s linear infinite;
+// }
+
+// @keyframes colorAnimation {
+//   0% {
+//     background-color: #dbeaef;
+//   }
+//   25% {
+//     background-color: rgb(185, 198, 198);
+//   }
+//   50% {
+//     background-color: #bac6c9;
+//   }
+//   75% {
+//     background-color: #dbeaef;
+//   }
+//   90% {
+//     background-color: #BBBEBF;
+//   }
+//   100% {
+//     background-color: #dbeaef;
+//   }
+// }

@@ -4,3 +4,15 @@ mixin image(file)
 mixin name 
   p.person__name-text Aurora Rosewood
 
+mixin worksItem(header, description, imageSrc, href)
+  a.works__item(href=href, target="_blank")
+    .works__item-header
+      .works__item-text
+        h3= header
+        span= description
+      .works__item-img
+        include ../../assets/images/arrow.svg
+    .works__item-bg
+      +image(imageSrc)
+
+//- +worksItem('Заголовок', 'Описание', 'путь_к_изображению', 'ссылка_адрес')
