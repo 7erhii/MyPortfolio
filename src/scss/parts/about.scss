@@ -16,14 +16,9 @@
     overflow: hidden;
     max-height: em(40);
     margin-top: em(30);
-    // margin-top: 20px;
-    // display: flex;
-    // gap: 20px;
-    // align-items: center;
-    // justify-content: center;
-    // @include mobile {
-    //   display: grid;
-    // }
+    @include mobile {
+      padding: em(4) 0;
+    }
   }
   &__btns {
     display: flex;
@@ -37,7 +32,6 @@
   }
 
   &__btn {
-    // position: relative;
     display: flex;
     align-items: center;
     gap: em(4);
@@ -88,15 +82,12 @@
   }
 
   &__descr {
-    // position: relative;
     display: flex;
     justify-content: center;
-    // padding: em(8) em(20);
   }
   &__descr-item {
     display: none;
     justify-content: center;
-    // margin-top: em(10);
     padding: em(8) em(20);
 
     gap: em(6);
@@ -107,12 +98,12 @@
       font-size: em(20);
       color: rgb(0, 0, 0);
       @include mobile {
-        font-size: em(16);
+        font-size: em(14);
       }
     }
     span {
       font-family: "Open Sans", sans-serif;
-      font-size: em(20);
+      font-size: em(18);
       color: rgb(147, 147, 147);
     }
   }
@@ -129,18 +120,26 @@
     z-index: 10;
     color: #000000;
     background: rgb(255, 255, 255);
+    @include mobile {
+      padding: em(20) em(10);
+    }
     p {
       font-family: "Open Sans", sans-serif;
-      font-size: em(20);
+      font-size: em(24);
       color: rgb(0, 0, 0);
+      text-transform: uppercase;
       @include mobile {
         font-size: em(16);
       }
     }
     span {
       font-family: "Open Sans", sans-serif;
-      font-size: em(20);
-      color: rgb(147, 147, 147);
+      font-size: em(18);
+      text-transform: lowercase;
+      color: rgb(117, 117, 117);
+      @include mobile {
+        font-size: em(14);
+      }
     }
   }
   &__descr-item-close {
@@ -148,8 +147,17 @@
     right: 0;
     top: 0;
     padding: em(20);
+    background: rgba(167, 122, 122, 0.306);
+    border-radius: 0 16px;
+    @include mobile {
+      margin: em(2);
+      border-radius: 16px;
+
+      padding: em(8);
+    }
     span {
       font-size: em(24);
+      color: rgb(194, 40, 40);
     }
   }
   .showed {
@@ -157,30 +165,5 @@
   }
   .showed-grid {
     display: grid;
-
   }
-
-  // &__dropdown{
-  //   // position: absolute;
-  //   display: flex;
-  //   align-items: center;
-  //   gap: em(6);
-
-  //   bottom: em(-70);
-  //   left: 0;
-  //   background: #fff;
-  //   border-radius: 50px;
-  //   padding: em(20) em(20);
-  //   white-space: nowrap;
-  // p {
-  //   font-family: "Open Sans", sans-serif;
-  //   font-size: em(20);
-  //   color: rgb(0, 0, 0);
-  // }
-  // span {
-  //   font-family: "Open Sans", sans-serif;
-  //   font-size: em(20);
-  //   color: rgb(147, 147, 147);
-  // }
-  // }
 }

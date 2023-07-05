@@ -1,10 +1,10 @@
-const buttons = document.querySelectorAll(".about-btn-js");
+const buttons = document.querySelectorAll(".about-btn-js") as NodeListOf<HTMLAnchorElement>;
 const btnsContainer = document.querySelector(".about__btns") as HTMLElement;
 const descrContainer = document.querySelector(".about__descr") as HTMLElement;
-const descrItems = document.querySelectorAll(".about__descr-item");
+const descrItems = document.querySelectorAll(".about__descr-item") as NodeListOf<HTMLElement>;
 const skillsContainer = document.querySelector(".about__skills") as HTMLElement;
-const descrAll = document.querySelector(".about__descr-item--full");
-const closeAllDesrcBtn = document.querySelector(".about__descr-item-close");
+const descrAll = document.querySelector(".about__descr-item--full") as HTMLElement;
+const closeAllDesrcBtn = document.querySelector(".about__descr-item-close") as HTMLAnchorElement;
 
 buttons.forEach((button, index) => {
   button.addEventListener("click", () => {
@@ -43,4 +43,3 @@ buttons.forEach((button, index) => {
 closeAllDesrcBtn.addEventListener("click", () => {
   descrAll.classList.remove("showed-grid");
 });
-
