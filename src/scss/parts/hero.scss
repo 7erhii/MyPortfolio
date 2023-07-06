@@ -90,6 +90,7 @@
     transition: all 0.3s ease-in-out;
 
     span {
+      white-space: nowrap;
       font-family: "Open Sans", sans-serif;
       font-size: em(24);
       color: hwb(0 100% 0%);
