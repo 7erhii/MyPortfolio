@@ -147,9 +147,14 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
     @include mobile {
       min-height: em(350);
     }
+  }
+  &__img:hover {
+    background-size: 101%;
+
   }
   &__img::before {
     content: "";

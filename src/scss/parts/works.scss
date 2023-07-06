@@ -12,6 +12,7 @@
     background: rgb(183, 177, 155);
 
     border-radius: 20px;
+    transition: all 0.27s ease-in-out;
     cursor: pointer;
     @include mobile {
         max-width: 100%;
