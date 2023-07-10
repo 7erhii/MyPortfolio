@@ -14,8 +14,7 @@
 
     height: em(600);
     @include mobile {
-    padding: em(30);
-      
+      padding: em(30);
     }
   }
   &__about::before {
@@ -27,7 +26,6 @@
     height: 100%;
     background-image: url("/src/assets/images/IMG1.jpeg");
     // background-image: url("/src/assets/images/bg.jpeg");
-
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -141,9 +139,7 @@
     background-color: rgb(121, 121, 121);
     width: 100%;
     border-radius: 16px;
-
-    background-image: url("/src/assets/images/IMG1.jpeg");
-
+    background-image: url("/src/assets/images/IMG1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -153,9 +149,15 @@
       min-height: em(350);
     }
   }
+
+  @supports not (background-image: url("/src/assets/images/IMG1.webp")) {
+    &__img {
+      background-image: url("/src/assets/images/IMG1.jpeg");
+    }
+  }
+
   &__img:hover {
     background-size: 101%;
-
   }
   &__img::before {
     content: "";
@@ -175,7 +177,6 @@
   }
   &__about-social {
     transition: all 0.3s ease-in-out;
-
   }
   &__about-social:hover {
     background: rgb(255, 255, 255);
