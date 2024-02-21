@@ -54,8 +54,11 @@
   &__about-text {
     h1 {
       font-family: "Open Sans", sans-serif;
-      font-size: em(34);
+      font-size: em(36);
+      font-weight: 600;
       color: #000;
+      letter-spacing: em(-2, 36);
+
       @include mobile {
         text-align: center;
       }
@@ -64,6 +67,9 @@
       font-family: "Open Sans", sans-serif;
       font-size: em(24);
       color: #ffffff;
+      line-height: 120%;
+      font-weight: 200;
+
       @include mobile {
         text-align: center;
       }
@@ -176,9 +182,12 @@
     z-index: 10;
   }
   &__about-social {
+    position: relative;
     transition: all 0.3s ease-in-out;
   }
   &__about-social:hover {
-    background: rgb(255, 255, 255);
+    background: #e0debc;
+    box-shadow: 0 0 10px 8px rgba(224, 222, 188, 0.257); /* Добавляем тень */
   }
+  
 }

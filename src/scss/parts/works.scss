@@ -53,16 +53,23 @@
     flex-direction: column;
     gap: em(8);
     h3 {
+      font-family: "Open Sans", sans-serif;
+
       color: #fff;
       font-size: em(24);
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+      letter-spacing: em(-1, 24);
       @include mobile {
       font-size: em(20);
       }
     }
     span {
+      font-family: "Open Sans", sans-serif;
+
       color: #ffffff;
       font-size: em(20);
+      letter-spacing: em(-0.4, 24);
+
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
       @include mobile {
       font-size: em(14);
